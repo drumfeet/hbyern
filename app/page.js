@@ -46,7 +46,7 @@ export default function Home() {
           <p className="text-purple-900 max-w-2xl mx-auto mb-6">
             Annoying each other and Funny Videos, LGBTQ lovers, HB Yern?
             <br />
-            For Event/Collab email: ronnelcui2017@gmail.com
+            For Event/Collab, email: ronnelcui2017@gmail.com
           </p>
 
           {/* Social Links */}
