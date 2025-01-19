@@ -40,7 +40,7 @@ export default function Home() {
           </div>
 
           <h1 className="text-4xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-orange-500 text-transparent bg-clip-text mb-2">
-            Bry and Ron
+            Bok and Bagz
           </h1>
           <p className="text-lg text-purple-800 mb-2">@hbyern</p>
           <p className="text-purple-900 max-w-2xl mx-auto mb-6">
