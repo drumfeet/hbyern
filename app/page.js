@@ -1,192 +1,188 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Facebook, Mail, TwitterIcon as TikTok } from "lucide-react"
+"use client"
+
 import { Button } from "@/components/ui/button"
+import {
+  Facebook,
+  Heart,
+  Mail,
+  MessageCircle,
+  Calendar,
+  DollarSign,
+  Instagram,
+} from "lucide-react"
+import Image from "next/image"
+
+// Custom TikTok Icon component
+const TikTokIcon = () => (
+  <svg viewBox="0 0 24 24" className="w-6 h-6" fill="currentColor">
+    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
+  </svg>
+)
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 flex flex-col items-center justify-center p-4">
-      <main className="bg-white bg-opacity-90 rounded-lg shadow-xl p-8 max-w-3xl w-full space-y-6">
-        <div className="flex flex-col items-center space-y-4">
-          <Image
-            src="/profile-photo.jpg"
-            alt="Bry and Ron"
-            width={150}
-            height={150}
-            className="rounded-full border-4 border-pink-400"
-          />
-          <h1 className="text-4xl font-bold text-center text-purple-800">
+    <main className="min-h-screen bg-gradient-to-b from-pink-400 via-purple-400 to-orange-300">
+      <div className="max-w-4xl mx-auto px-4 py-12">
+        {/* Profile Section */}
+        <div className="text-center mb-12">
+          <div className="relative w-48 h-48 mx-auto mb-14">
+            <Image
+              src="/hbyern.jpg?q=80&w=400&h=400&fit=crop"
+              alt="Bry and Ron"
+              width={200}
+              height={200}
+              className="rounded-full border-4 border-white shadow-lg"
+            />
+            <div className="absolute -bottom-2 -right-2 bg-pink-500 rounded-full p-2">
+              <Heart className="w-6 h-6 text-white" />
+            </div>
+          </div>
+
+          <h1 className="text-4xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-orange-500 text-transparent bg-clip-text mb-2">
             Bry and Ron
           </h1>
-          <p className="text-xl text-center text-gray-600">@hbyern</p>
+          <p className="text-lg text-purple-800 mb-2">@hbyern</p>
+          <p className="text-purple-900 max-w-2xl mx-auto mb-6">
+            Annoying each other and Funny Videos, LGBTQ lovers, HB Yern?
+            <br />
+            For Event/Collab email: ronnelcui2017@gmail.com
+          </p>
+
+          {/* Social Links */}
+          <div className="flex justify-center gap-4 mb-8">
+            <Button
+              variant="outline"
+              size="icon"
+              asChild
+              className="rounded-full bg-white hover:bg-pink-100 transition-colors"
+            >
+              <a
+                href="https://facebook.com/hbyern"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <Facebook className="w-5 h-5 text-blue-600" />
+              </a>
+            </Button>
+            <Button
+              variant="outline"
+              size="icon"
+              asChild
+              className="rounded-full bg-white hover:bg-purple-100 transition-colors"
+            >
+              <a
+                href="https://instagram.com/hb_yern"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-5 h-5 text-pink-600" />
+              </a>
+            </Button>
+            <Button
+              variant="outline"
+              size="icon"
+              asChild
+              className="rounded-full bg-white hover:bg-orange-100 transition-colors"
+            >
+              <a
+                href="https://tiktok.com/@shikcui3"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TikTok"
+              >
+                <TikTokIcon />
+              </a>
+            </Button>
+            <Button
+              variant="outline"
+              size="icon"
+              asChild
+              className="rounded-full bg-white hover:bg-pink-100 transition-colors"
+            >
+              <a href="mailto:ronnelcui2017@gmail.com" aria-label="Email">
+                <Mail className="w-5 h-5 text-pink-500" />
+              </a>
+            </Button>
+          </div>
         </div>
 
-        <p className="text-center text-lg text-gray-700">
-          Annoying each other and Funny Videos, LGBTQ lovers, HB Yern? For
-          Event/Collab email: ronnelcui2017@gmail.com
-        </p>
+        {/* TikTok Embed */}
+        <div className="mb-8 bg-gradient-to-r from-pink-300 to-purple-300 rounded-lg overflow-hidden shadow-lg">
+          <div className="relative w-full h-[calc(100vh-6rem)] bg-gradient-to-r from-pink-300 to-purple-300">
+            <iframe
+              src="https://www.tiktok.com/embed/v2/7420921071873871120"
+              className="absolute top-0 left-0 w-full h-full border-0"
+              allowFullScreen
+            />
+          </div>
+        </div>
 
-        <div className="flex justify-center space-x-4">
-          <Link
-            href="https://www.facebook.com/your-profile"
+        {/* Interactive Sections */}
+        <div className="grid md:grid-cols-2 gap-6 mb-8">
+          {/* Comment Section */}
+          <div className="bg-gradient-to-br from-pink-300 to-purple-300 p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-4 flex items-center gap-2 text-purple-900">
+              <MessageCircle className="w-5 h-5" />
+              Join the Conversation
+            </h3>
+            <p className="text-purple-800 mb-4">
+              We&apos;d love to hear your thoughts! Share your ideas, questions,
+              or just say hi.
+            </p>
+            <a
+              href="https://drumfeet.notion.site/Post-18045d53d2b880c884dbfff3ab966316?pvs=4"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full py-2 px-4 bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white text-center rounded-md transition-colors duration-300"
+            >
+              Leave a Comment
+            </a>
+          </div>
+
+          {/* Schedule Meeting */}
+          <div className="bg-gradient-to-br from-purple-300 to-orange-300 p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold mb-4 flex items-center gap-2 text-purple-900">
+              <Calendar className="w-5 h-5" />
+              Let&apos;s Connect
+            </h3>
+            <p className="text-purple-800 mb-4">
+              Want to collaborate or just chat? We&apos;re excited to meet you!
+            </p>
+            <a
+              href="https://calendly.com/drumfeet/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full py-2 px-4 bg-gradient-to-r w-full bg-gradient-to-r from-purple-500 to-orange-500 hover:from-purple-600 hover:to-orange-600 text-white text-center rounded-md transition-colors duration-300"
+            >
+              Schedule a Meeting
+            </a>
+          </div>
+        </div>
+
+        {/* Donate Section */}
+        <div className="bg-gradient-to-r from-pink-300 to-orange-300 p-6 rounded-lg shadow-md text-center">
+          <h3 className="text-xl font-semibold mb-4 flex items-center justify-center gap-2 text-purple-900">
+            <DollarSign className="w-5 h-5" />
+            Support Our Creative Journey
+          </h3>
+          <p className="text-purple-800 mb-4">
+            Your support helps us create more fun, engaging content and keeps
+            the laughter flowing. Every contribution, big or small, makes a
+            difference!
+          </p>
+
+          <a
+            href="https://drumfeet.notion.site/Donate-18045d53d2b880f6a9e1e20d7243c8f6?pvs=4"
             target="_blank"
             rel="noopener noreferrer"
+            className="block w-full py-2 px-4 bg-gradient-to-r from-pink-500 to-orange-500 hover:from-pink-600 hover:to-orange-600 text-white text-center rounded-md transition-colors duration-300"
           >
-            <Facebook className="w-8 h-8 text-blue-600 hover:text-blue-800" />
-          </Link>
-          <Link href="mailto:ronnelcui2017@gmail.com">
-            <Mail className="w-8 h-8 text-red-600 hover:text-red-800" />
-          </Link>
-          <Link
-            href="https://www.tiktok.com/@hbyern"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <TikTok className="w-8 h-8 text-black hover:text-gray-800" />
-          </Link>
+            Buy Us a Coffee
+          </a>
         </div>
-
-        <div className="flex flex-wrap justify-center gap-4">
-          <Button variant="default">Post a comment</Button>
-          <Button variant="outline">Schedule a meeting</Button>
-          <Button variant="secondary">Donate</Button>
-        </div>
-
-        <div className="tiktok-video">
-          <blockquote
-            className="tiktok-embed"
-            cite="https://www.tiktok.com/@bia.qe/video/7455435691338501398"
-            data-video-id="7455435691338501398"
-            style={{ maxWidth: "605px", minWidth: "325px" }}
-          >
-            <section>
-              <a
-                target="_blank"
-                title="@bia.qe"
-                href="https://www.tiktok.com/@bia.qe?refer=embed"
-              >
-                @bia.qe
-              </a>
-              How to make your pc run better? . . •Open google, then search
-              "rammp" and click on the first site • Go to "system info" -&gt;
-              RAMmap •Open it •Open "RAMMap64" •Go to "empty" and select "empty
-              standby list" Here you go! 🙃 by the way, happy new year! 🎉 . .
-              <a
-                title="pctip"
-                target="_blank"
-                href="https://www.tiktok.com/tag/pctip?refer=embed"
-              >
-                #pctip
-              </a>
-              <a
-                title="pctips"
-                target="_blank"
-                href="https://www.tiktok.com/tag/pctips?refer=embed"
-              >
-                #pctips
-              </a>
-              <a
-                title="biaqe"
-                target="_blank"
-                href="https://www.tiktok.com/tag/biaqe?refer=embed"
-              >
-                #biaqe
-              </a>
-              <a
-                title="microsoft"
-                target="_blank"
-                href="https://www.tiktok.com/tag/microsoft?refer=embed"
-              >
-                #microsoft
-              </a>
-              <a
-                title="ram"
-                target="_blank"
-                href="https://www.tiktok.com/tag/ram?refer=embed"
-              >
-                #ram
-              </a>
-              <a
-                title="windows"
-                target="_blank"
-                href="https://www.tiktok.com/tag/windows?refer=embed"
-              >
-                #windows
-              </a>
-              <a
-                title="pc"
-                target="_blank"
-                href="https://www.tiktok.com/tag/pc?refer=embed"
-              >
-                #pc
-              </a>
-              <a
-                title="pcgaming"
-                target="_blank"
-                href="https://www.tiktok.com/tag/pcgaming?refer=embed"
-              >
-                #pcgaming
-              </a>
-              <a
-                title="gaming"
-                target="_blank"
-                href="https://www.tiktok.com/tag/gaming?refer=embed"
-              >
-                #gaming
-              </a>
-              <a
-                title="viral"
-                target="_blank"
-                href="https://www.tiktok.com/tag/viral?refer=embed"
-              >
-                #viral
-              </a>
-              <a
-                title="virall"
-                target="_blank"
-                href="https://www.tiktok.com/tag/virall?refer=embed"
-              >
-                #virall
-              </a>
-              <a
-                title="fyp"
-                target="_blank"
-                href="https://www.tiktok.com/tag/fyp?refer=embed"
-              >
-                #fyp
-              </a>
-              <a
-                title="fy"
-                target="_blank"
-                href="https://www.tiktok.com/tag/fy?refer=embed"
-              >
-                #fy
-              </a>
-              <a
-                title="foryoupage"
-                target="_blank"
-                href="https://www.tiktok.com/tag/foryoupage?refer=embed"
-              >
-                #foryoupage
-              </a>
-              <a
-                title="foryou"
-                target="_blank"
-                href="https://www.tiktok.com/tag/foryou?refer=embed"
-              >
-                #foryou
-              </a>
-              <a
-                target="_blank"
-                title="♬ 真夜中のドア〜stay with me - 松原みき"
-                href="https://www.tiktok.com/music/真夜中のドア〜stay-with-me-6878744350931634950?refer=embed"
-              >
-                ♬ 真夜中のドア〜stay with me - 松原みき
-              </a>
-            </section>
-          </blockquote>
-        </div>
-      </main>
-    </div>
+      </div>
+    </main>
   )
 }
