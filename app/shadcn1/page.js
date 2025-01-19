@@ -57,7 +57,7 @@ export default function Home() {
               className="rounded-full bg-white hover:bg-blue-50 transition-colors"
             >
               <a
-                href="https://facebook.com"
+                href="https://facebook.com/hbyern"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
@@ -72,7 +72,7 @@ export default function Home() {
               className="rounded-full bg-white hover:bg-pink-50 transition-colors"
             >
               <a
-                href="https://instagram.com"
+                href="https://instagram.com/hb_yern"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -87,7 +87,7 @@ export default function Home() {
               className="rounded-full bg-white hover:bg-gray-50 transition-colors"
             >
               <a
-                href="https://tiktok.com/@hbyern"
+                href="https://tiktok.com/@shikcui3"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="TikTok"
@@ -109,10 +109,10 @@ export default function Home() {
         </div>
 
         {/* TikTok Embed */}
-        <div className="mb-8 bg-white/80 backdrop-blur overflow-hidden">
+        <div className="mb-8 bg-gradient-to-r from-purple-100 to-pink-100 rounded-lg overflow-hidden shadow-lg">
           <div className="relative w-full h-[calc(100vh-6rem)]">
             <iframe
-              src="https://www.tiktok.com/embed/v2/7455435691338501398"
+              src="https://www.tiktok.com/embed/v2/7420921071873871120"
               className="absolute top-0 left-0 w-full h-full border-0"
               allowFullScreen
             />
@@ -122,47 +122,47 @@ export default function Home() {
         {/* Interactive Sections */}
         <div className="grid md:grid-cols-2 gap-6 mb-8">
           {/* Comment Section */}
-          <div className="bg-white/80 backdrop-blur p-6 rounded-lg shadow-md">
+          <div className="bg-gradient-to-br from-blue-100 to-purple-100 p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
               <MessageCircle className="w-5 h-5" />
               Join the Conversation
             </h3>
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-700 mb-4">
               We&apos;d love to hear your thoughts! Share your ideas, questions,
               or just say hi.
             </p>
-            <Button className="w-full bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600">
+            <Button className="w-full bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white">
               Leave a Comment
             </Button>
           </div>
 
           {/* Schedule Meeting */}
-          <div className="bg-white/80 backdrop-blur p-6 rounded-lg shadow-md">
+          <div className="bg-gradient-to-br from-pink-100 to-orange-100 p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
               <Calendar className="w-5 h-5" />
               Let&apos;s Connect
             </h3>
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-700 mb-4">
               Want to collaborate or just chat? We&apos;re excited to meet you!
             </p>
-            <Button className="w-full bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600">
+            <Button className="w-full bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white">
               Schedule a Meeting
             </Button>
           </div>
         </div>
 
         {/* Donate Section */}
-        <div className="bg-white/80 backdrop-blur p-6 rounded-lg shadow-md text-center">
+        <div className="bg-gradient-to-r from-yellow-100 to-orange-100 p-6 rounded-lg shadow-md text-center">
           <h3 className="text-xl font-semibold mb-4 flex items-center justify-center gap-2">
             <DollarSign className="w-5 h-5" />
             Support Our Creative Journey
           </h3>
-          <p className="text-gray-600 mb-4">
+          <p className="text-gray-700 mb-4">
             Your support helps us create more fun, engaging content and keeps
             the laughter flowing. Every contribution, big or small, makes a
             difference!
           </p>
-          <Button className="bg-gradient-to-r from-yellow-500 to-pink-500 hover:from-yellow-600 hover:to-pink-600">
+          <Button className="bg-gradient-to-r from-yellow-500 to-pink-500 hover:from-yellow-600 hover:to-pink-600 text-white">
             Buy Us a Coffee
           </Button>
         </div>
