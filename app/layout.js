@@ -24,7 +24,7 @@ export const metadata = {
     description: "Annoying each other and Funny Videos, LGBTQ lovers.",
     images: [
       {
-        url: "/hbyern.jpg",
+        url: "/hbyern_meta.jpg",
         width: 1200,
         height: 630,
         alt: "hbyern",
