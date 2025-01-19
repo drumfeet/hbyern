@@ -22,7 +22,7 @@ const TikTokIcon = () => (
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-pink-400 via-purple-400 to-orange-300">
+    <main className="min-h-screen bg-gradient-to-b from-red-400 via-purple-400 to-orange-300">
       <div className="max-w-4xl mx-auto px-4 py-12">
         {/* Profile Section */}
         <div className="text-center mb-12">
