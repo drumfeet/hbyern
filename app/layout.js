@@ -19,6 +19,18 @@ export const metadata = {
   icons: {
     icon: "/globe.svg",
   },
+  openGraph: {
+    title: "HB Yern?",
+    description: "Annoying each other and Funny Videos, LGBTQ lovers.",
+    images: [
+      {
+        url: "/hbyern.jpg",
+        width: 1200,
+        height: 630,
+        alt: "hbyern",
+      },
+    ],
+  },
 }
 
 export default function RootLayout({ children }) {

@@ -8,6 +8,7 @@ import {
   MessageCircle,
   Calendar,
   DollarSign,
+  Gift,
   Instagram,
 } from "lucide-react"
 import Image from "next/image"
@@ -164,7 +165,7 @@ export default function Home() {
         {/* Donate Section */}
         <div className="bg-gradient-to-r from-yellow-100 to-orange-100 p-6 rounded-lg shadow-md text-center">
           <h3 className="text-xl font-semibold mb-4 flex items-center justify-center gap-2">
-            <DollarSign className="w-5 h-5" />
+            <Gift className="w-5 h-5" />
             Support Our Creative Journey
           </h3>
           <p className="text-gray-700 mb-4">
