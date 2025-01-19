@@ -131,9 +131,14 @@ export default function Home() {
               We&apos;d love to hear your thoughts! Share your ideas, questions,
               or just say hi.
             </p>
-            <Button className="w-full bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white">
+            <a
+              href="https://drumfeet.notion.site/Post-18045d53d2b880c884dbfff3ab966316?pvs=4"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full py-2 px-4 bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white text-center rounded-md transition-colors duration-300"
+            >
               Leave a Comment
-            </Button>
+            </a>
           </div>
 
           {/* Schedule Meeting */}
@@ -145,9 +150,14 @@ export default function Home() {
             <p className="text-gray-700 mb-4">
               Want to collaborate or just chat? We&apos;re excited to meet you!
             </p>
-            <Button className="w-full bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white">
+            <a
+              href="https://calendly.com/drumfeet/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full py-2 px-4 bg-gradient-to-r w-full bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white text-center rounded-md transition-colors duration-300"
+            >
               Schedule a Meeting
-            </Button>
+            </a>
           </div>
         </div>
 
@@ -162,9 +172,15 @@ export default function Home() {
             the laughter flowing. Every contribution, big or small, makes a
             difference!
           </p>
-          <Button className="bg-gradient-to-r from-yellow-500 to-pink-500 hover:from-yellow-600 hover:to-pink-600 text-white">
+
+          <a
+            href="https://drumfeet.notion.site/Donate-18045d53d2b880f6a9e1e20d7243c8f6?pvs=4"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block w-full py-2 px-4 bg-gradient-to-r  from-yellow-500 to-pink-500 hover:from-yellow-600 hover:to-pink-600 text-white text-center rounded-md transition-colors duration-300"
+          >
             Buy Us a Coffee
-          </Button>
+          </a>
         </div>
       </div>
     </main>
