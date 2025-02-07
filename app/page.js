@@ -104,7 +104,7 @@ export default function Home() {
                     bgColor="bg-red-600"
                   />
                   <SocialLink
-                    href="mailto:ronnelcui2017@gmail.com"
+                    href="mailto:hbyern@gmail.com"
                     icon={<Mail className="w-5 h-5" />}
                     label="Email"
                     bgColor="bg-yellow-500"
@@ -115,10 +115,10 @@ export default function Home() {
                     For Event/Collab, email:
                   </p>
                   <a
-                    href="mailto:ronnelcui2017@gmail.com"
+                    href="mailto:hbyern@gmail.com"
                     className="text-xl font-bold text-white hover:underline transition-all duration-300 hover:text-yellow-300"
                   >
-                    ronnelcui2017@gmail.com
+                    hbyern@gmail.com
                   </a>
                 </div>
               </div>
