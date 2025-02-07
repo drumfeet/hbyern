@@ -143,16 +143,16 @@ export default function Home() {
   )
 }
 
-function SocialLink({ href, icon, label, bgColor }) {
+const SocialLink = ({ href, icon, label, bgColor }) => {
   return (
     <a
       href={href}
       target="_blank"
       rel="noopener noreferrer"
+      className={`${bgColor} p-2 md:p-3 rounded-full hover:opacity-80 transition-opacity`}
       aria-label={label}
-      className={`${bgColor} w-12 h-12 rounded-full flex items-center justify-center hover:opacity-80 transition-all duration-300 transform hover:scale-110`}
     >
-      <div className="text-white">{icon}</div>
+      {icon}
     </a>
   )
 }
