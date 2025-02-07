@@ -38,7 +38,7 @@ export default function Home() {
             className="px-14 py-6 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white text-xl font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
           >
             <a
-              href="/"
+              href="https://docs.google.com/spreadsheets/d/1e0mQqSVFVp3jhKBQa1QBnT4-HlgupE95WAyTausEOiY/edit?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2"
