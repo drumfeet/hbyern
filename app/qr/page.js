@@ -1,6 +1,5 @@
 "use client"
 
-import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import {
   Facebook,
@@ -22,24 +21,11 @@ const TikTokIcon = () => (
 )
 
 export default function Home() {
-  const [showPayments, setShowPayments] = useState(false)
-
   return (
     <main className="min-h-screen bg-gradient-to-br from-yellow-300 via-pink-400 to-purple-500">
       <div className="max-w-6xl mx-auto px-4 py-12">
-        <Button
-          onClick={() => setShowPayments(!showPayments)}
-          className="w-full mb-4 bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600"
-        >
-          {showPayments ? "Hide Payment Methods" : "Show Payment Methods"}
-        </Button>
-
         {/* Payment Methods Section */}
-        <div
-          className={`${
-            showPayments ? "block" : "hidden"
-          } bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-lg text-center mb-8`}
-        >
+        <div className="bg-white/90 backdrop-blur-sm p-6 rounded-2xl shadow-lg text-center mb-8">
           <h3 className="text-2xl font-bold mb-4 flex items-center justify-center gap-2 text-purple-800">
             <QrCode className="w-8 h-8" />
             Support Through Direct Transfer
